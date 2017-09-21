@@ -1,0 +1,16 @@
+<section class="archive">
+    <div class="container">
+        <div class="row">
+        	<div class="col-md-2">
+        	</div>
+            <main class="col-md-10 post">
+               <% page.posts.each(function (post) { %>
+                 <p><i class="fa fa-star-half-o"></i>
+                 <a class="archive-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+		    	 <span class="archive-date"><%= date(post.date, "YYYY-MM-DD") %></span>
+    <% }) %>
+            </main>
+         </div>
+	</div>	  
+</section>
+<%- partial('_partial/paginator') %>

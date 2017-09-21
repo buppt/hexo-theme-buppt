@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title><%= config.title %></title>
+    <%- css('css/test') %>
+</head>
+<body>
+    <%- partial('_partial/header') %>
+    <section class="main">
+    <div class="container">
+        <div class="row">
+            <main class="col-md-9">
+        		<%- body %>
+			</main>
+	     	<aside class="visible-lg-block visible-md-block col-md-3 sidebar">
+                <div style="position:fixed">
+                       <img class="img-circle" src="<%= theme.avatar %>">
+                    <p class="name"><%= theme.name %></p>
+                    <p class="name"><%= theme.introduce %></p>
+                    <p class="tagcloud"><%- tagcloud(site.tags, {}) %>              </p>
+                </div>
+	      </aside>
+        </div>
+    </div>
+	</section>
+    <%- partial('_partial/footer') %>
+    <div id="gotop" class="to_top btn scroll_top" style="display: block">
+		<span class="fa fa-angle-up"></span>
+	</div>
+    <%- js('js/index.js') %>
+</body>
+</html>

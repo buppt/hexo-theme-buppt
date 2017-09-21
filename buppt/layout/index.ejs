@@ -1,0 +1,20 @@
+
+<% page.posts.each(function (post) { %>
+	<article class="post">
+	  <div class="post-head">
+	<a class="post-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+		<div class="post-meta">
+		            <span>作者：<%= config.author %></span>  
+		<span class="post-time"><%- date(post.date, "YYYY-MM-DD") %></span>
+		</div>
+	  </div>
+	  <div class="post-content">
+	<%- post.excerpt %>
+		    <footer class="post-footer">
+		        <div class="post-eof"></div>
+		    </footer>
+	  </div>
+	</article>
+<% }) %>
+<%- partial('_partial/paginator') %>
+

@@ -1,0 +1,145 @@
+@charset "UTF-8";
+html, body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin-top: 40px;
+  line-height: 1.75em;
+  font-family: -apple-system, "PingFang SC","Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif; }
+
+a {
+  color: #000000;
+  outline: none;
+  test-decoration: none; }
+
+a:active, a:focus, a:hover, a:visited, a img {
+  outline: none;
+  text-decoration: none; }
+
+.navbar {
+  text-align: center;
+  background: #FFFFFF;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(14, 14, 14, 0.26); }
+  .navbar .navbar-brand {
+    margin-top: 3px;
+    padding-left: 50px; }
+    .navbar .navbar-brand .brand-logo {
+      border-radius: 3px;
+      background: black;
+      color: white;
+      padding-bottom: 3px;
+      padding-left: 5px;
+      margin-right: 5px;
+      padding-top: 1px; }
+  .navbar .menu {
+    text-align: center;
+    margin-top: 2px; }
+  .navbar .menu-link {
+    margin-top: 7px;
+    margin-right: 20px; }
+    .navbar .menu-link a {
+      margin-left: 10px; }
+
+.main {
+  flex: 1; }
+  .main .container {
+    margin: 0 auto; }
+    .main .container .post {
+      margin: 30px auto;
+      max-width: 700px;
+      background: #ffffff;
+      position: relative;
+      overflow: hidden; }
+      .main .container .post .post-head {
+        text-align: center; }
+        .main .container .post .post-head .post-title {
+          margin: 0;
+          font-size: 2.5em;
+          line-height: 1em; }
+        .main .container .post .post-head .post-meta {
+          color: #959595;
+          margin: 14px 0 0px; }
+      .main .container .post .post-content {
+        font: 400 18px/1.62 "微软雅黑 Light";
+        color: #444443;
+        margin-top: 0;
+        margin-bottom: 1.46em; }
+        .main .container .post .post-content .post-eof {
+          display: block;
+          margin: 80px auto 60px;
+          width: 40%;
+          height: 1px;
+          background: #ccc;
+          text-align: center; }
+    .main .container .page-nav {
+      position: relative;
+      font-size: 15px;
+      text-align: center;
+      margin-top: -30px;
+      margin-bottom: 90px; }
+      .main .container .page-nav .page-number {
+        margin: 5px;
+        padding-left: 15px;
+        padding-right: 15px; }
+      .main .container .page-nav .next, .main .container .page-nav .prev {
+        margin: 20px; }
+    .main .container .sidebar {
+      text-align: center; }
+      .main .container .sidebar img {
+        test-align: center;
+        width: 150px; }
+      .main .container .sidebar .name {
+        test-align: center;
+        width: 200px;
+        color: #808080; }
+      .main .container .sidebar .tagcloud {
+        text-align: center;
+        width: 200px; }
+        .main .container .sidebar .tagcloud a {
+          color: #FFF;
+          border-radius: 4px;
+          padding: 1px 7px;
+          background-color: #ccc; }
+
+.main-footer {
+  background: #202020;
+  color: #959595; }
+  .main-footer .page-end {
+    text-align: center;
+    margin: 0 auto; }
+
+.archive p {
+  margin: 30px; }
+.archive .archive-title {
+  margin-right: 10px;
+  font-size: 20px; }
+.archive .archive-date {
+  font-size: 10px; }
+
+.to_top.btn {
+    color: #FFFFFF;
+    background: #222;
+    border: 2px solid #555;
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+    width: 30px;
+    height: 30px;
+    display: none;
+    z-index: 3;
+    padding: 0px;
+    text-align: center;
+    -webkit-transform: translate3d(0,0,0);
+}
+nav {
+    animation: fade-in;/*动画名称*/
+    animation-duration: 0.5s;/*动画持续时间*/
+    -webkit-animation:fade-in 0.5s;/*针对webkit内核*/
+}
+section,header,article,aside{
+    animation: fade-in;/*动画名称*/
+    animation-duration: 1s;/*动画持续时间*/
+    -webkit-animation:fade-in 1s;/*针对webkit内核*/
+}
+
