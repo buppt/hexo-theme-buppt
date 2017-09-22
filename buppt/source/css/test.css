@@ -108,7 +108,9 @@ a:active, a:focus, a:hover, a:visited, a img {
   .main-footer .page-end {
     text-align: center;
     margin: 0 auto; }
-
+.archive{
+	margin-bottom: 50px;
+}
 .archive p {
   margin: 30px; }
 .archive .archive-title {
