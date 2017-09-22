@@ -1,12 +1,20 @@
-<section class="archive">
-            <main class="post">
-               <% page.posts.each(function (post) { %>
-                 <p>
-                 <i class="fa fa-star-half-o"></i>
-                 <a class="archive-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
-                 <span class="archive-date"><%= date(post.date, "YYYY-MM-DD") %></span>		    	 
-    <% }) %>
-            </main>
-        
-</section>
+<div class="archive">
+    <% var last;
+    page.posts.each(function(post, i) {
+        var year = post.date.year();
+        if (last != year) {
+            last = year; %>
+            <div>
+                <h1 class="title"><span class="node"><i class="fa fa-calendar"></i></span><%= year %></h1>
+            </div>
+        <% } %>
+        <div>
+            <div class="content">
+            <a class="archive-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+                 <span class="archive-date"><%= date(post.date, "YYYY-MM-DD") %></span>		
+            </div>
+        </div>
+    <% }); %>
+</div>
+
 <%- partial('_partial/paginator') %>

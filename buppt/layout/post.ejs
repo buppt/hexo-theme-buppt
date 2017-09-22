@@ -3,15 +3,23 @@
             <main class="col-md-9">
 		    <article class="post">
 		      <div class="post-head">
-			<a class="post-title"><%= page.title %></a>
+		      <a class="post-title"><%= page.title %></a>
+			  <% if(page.title!="About"){ %>
+			    
 		        <div class="post-meta">
-                            <span>作者：<%= config.author %></span>  
-			    <span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>
-		        </div>
+                            <span>作者：<%= config.author %></span>  <span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>			    
+		        </div>	        
 		      </div>
 		      <div class="post-content">
 			<%- page.content %>
 		      </div>
+		      <% }else{ %>
+		      <div class="about">
+		        <div class="post-about">
+					<%- page.content %>
+				</div>
+			  </div>
+		      <% } %>
 		    </article>
 	     </main>
 	</div>

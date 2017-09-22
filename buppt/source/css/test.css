@@ -23,18 +23,22 @@ a:active, a:focus, a:hover, a:visited, a img {
   box-shadow: 0 0 10px rgba(14, 14, 14, 0.26); }
   .navbar .navbar-brand {
     margin-top: 3px;
-    padding-left: 50px; }
+    padding-left: 70px; }
     .navbar .navbar-brand .brand-logo {
+      font-weight: bold;
       border-radius: 3px;
       background: black;
       color: white;
       padding-bottom: 3px;
       padding-left: 5px;
-      margin-right: 5px;
+      padding-right: 5px;
       padding-top: 1px; }
   .navbar .menu {
     text-align: center;
-    margin-top: 2px; }
+    margin-top: 2px; 
+    font-size: 15px;
+    font-weight: bold;
+    }
   .navbar .menu-link {
     margin-top: 7px;
     margin-right: 20px; }
@@ -46,6 +50,7 @@ a:active, a:focus, a:hover, a:visited, a img {
   .main .container {
     margin: 0 auto; }
     .main .container .post {
+      text-align: center;
       margin: 30px auto;
       max-width: 700px;
       background: #ffffff;
@@ -54,6 +59,7 @@ a:active, a:focus, a:hover, a:visited, a img {
       .main .container .post .post-head {
         text-align: center; }
         .main .container .post .post-head .post-title {
+        font: 14px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
           margin: 0;
           font-size: 2.5em;
           line-height: 1em; }
@@ -63,8 +69,18 @@ a:active, a:focus, a:hover, a:visited, a img {
       .main .container .post .post-content {
         font: 400 18px/1.62 "微软雅黑 Light";
         color: #444443;
-        margin-top: 0;
-        margin-bottom: 1.46em; }
+        margin-top: 40px;
+        margin-bottom: 1.46em;
+        text-align: left; 
+        }
+      .main .container .post .post-about {
+        max-width: 600px;
+        text-align: left;
+        font: 400 18px/1.62 "微软雅黑 Light";
+        color: #444443;
+        margin-top: 40px;
+        margin-bottom: 1.46em;
+        }
         .main .container .post .post-content .post-eof {
           display: block;
           margin: 80px auto 60px;
@@ -108,14 +124,19 @@ a:active, a:focus, a:hover, a:visited, a img {
   .main-footer .page-end {
     text-align: center;
     margin: 0 auto; }
+  .main-footer p{
+  	margin: 5px;
+  }
 .archive{
-	text-align: center;
-	margin-bottom: 50px;
+	margin: 50px auto;
+	max-width: 500px;
+	margin-bottom: 100px;
 }
-.archive p {
-  padding: 30px 10px; 
- 
-  margin-bottom:0;
+.archive .node{
+  font-size: 22px;
+}
+.archive .content{
+  margin: 30px;
 }
 .archive .archive-title {
   margin-right: 10px;
@@ -159,4 +180,4 @@ section,header,article,aside{
     animation-duration: 1s;/*动画持续时间*/
     -webkit-animation:fade-in 1s;/*针对webkit内核*/
 }
-  
+

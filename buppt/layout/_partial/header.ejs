@@ -12,8 +12,9 @@
             <a class="navbar-brand" href="<%- url_for() %>">
                 <span class="brand-logo">
                     <%= config.author %>
-                </span>
+                
                 's blog
+                </span>
             </a>
         </div>
 
@@ -27,16 +28,16 @@
 		<% } %>
             </ul>
             <div class="hidden-xs navbar-right menu-link">
-                <a target="_blank" data-toggle="tooltip" data-placement="bottom" title="CSDN博客" href="<%= theme.link["CSDN"] %>">
-                <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa  fa-stack-1x fa-inverse">C</i>
-                </span>
-                </a>
                 <a title="GitHub" target="_blank" href="<%= theme.link["Github"] %>" data-toggle="tooltip" data-placement="bottom">
                 <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+                </a>
+                <a target="_blank" data-toggle="tooltip" data-placement="bottom" title="CSDN博客" href="<%= theme.link["CSDN"] %>">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa  fa-stack-1x fa-inverse">C</i>
                 </span>
                 </a>
                 <a title="微博" target="_blank" href="<%= theme.link["weibo"] %>" data-toggle="tooltip" data-placement="bottom">
