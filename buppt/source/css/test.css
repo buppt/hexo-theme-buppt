@@ -109,15 +109,19 @@ a:active, a:focus, a:hover, a:visited, a img {
     text-align: center;
     margin: 0 auto; }
 .archive{
+	text-align: center;
 	margin-bottom: 50px;
 }
 .archive p {
-  margin: 30px; }
+  padding: 30px 10px; 
+ 
+  margin-bottom:0;
+}
 .archive .archive-title {
   margin-right: 10px;
-  font-size: 20px; }
+  font-size: 25px; }
 .archive .archive-date {
-  font-size: 10px; }
+  font-size: 15px; }
 
 .to_top.btn {
     color: #FFFFFF;
@@ -134,14 +138,25 @@ a:active, a:focus, a:hover, a:visited, a img {
     text-align: center;
     -webkit-transform: translate3d(0,0,0);
 }
+
+@keyframes fade-in {  
+    0% {opacity: 0;}/*初始状态 透明度为0*/  
+    40% {opacity: 0;}/*过渡状态 透明度为0*/  
+    100% {opacity: 1;}/*结束状态 透明度为1*/  
+}  
+@-webkit-keyframes fade-in {/*针对webkit内核*/  
+    0% {opacity: 0;}  
+    40% {opacity: 0;}  
+    100% {opacity: 1;}  
+}  
 nav {
     animation: fade-in;/*动画名称*/
-    animation-duration: 0.5s;/*动画持续时间*/
-    -webkit-animation:fade-in 0.5s;/*针对webkit内核*/
+    animation-duration: 0.1s;/*动画持续时间*/
+    -webkit-animation:fade-in 0.1s;/*针对webkit内核*/
 }
 section,header,article,aside{
     animation: fade-in;/*动画名称*/
     animation-duration: 1s;/*动画持续时间*/
     -webkit-animation:fade-in 1s;/*针对webkit内核*/
 }
-
+  

@@ -13,3 +13,6 @@ $(document).ready(function () {
             $('html,body').animate({scrollTop: '0px'}, 800);
         });
     });
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
