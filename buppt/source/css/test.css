@@ -103,16 +103,17 @@ a:active, a:focus, a:hover, a:visited, a img {
     .main .container .sidebar {
       text-align: center; }
       .main .container .sidebar img {
-        test-align: center;
+        text-align: center;
         width: 150px; }
       .main .container .sidebar .name {
-        test-align: center;
+        text-align: center;
         width: 200px;
         color: #808080; }
       .main .container .sidebar .tagcloud {
         text-align: center;
         width: 200px; }
-        .main .container .sidebar .tagcloud a {
+        .main .container .sidebar .tagcloud a{
+          
           color: #FFF;
           border-radius: 4px;
           padding: 1px 7px;
@@ -129,7 +130,7 @@ a:active, a:focus, a:hover, a:visited, a img {
   }
 .archive{
 	margin: 50px auto;
-	max-width: 500px;
+	max-width: 600px;
 	margin-bottom: 100px;
 }
 .archive .node{

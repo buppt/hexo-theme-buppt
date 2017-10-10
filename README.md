@@ -36,23 +36,14 @@ introduce的内容是头像及名称下面要显示的个人介绍，
 
 你会得到一个 client ID 和一个 client secret，这个将被用于之后的用户登录。
 ### 2.引入gitment
-使用hexo g命令后，打开public文件夹中生成的index.html文件，将下面的代码添加到main标签的最后面（&lt;/main&gt;的上面一行）。
+gitment现在已经写入本主题中，只需修改buppt文件夹下，_config.yml文件中的以下内容即可。
 ```
-<div id="container"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: '页面 ID', // 可选。默认为 location.href.如果不需要则删除此行。
-  owner: '你的 GitHub ID',//如buppt
-  repo: '存储评论的 repo',//如buppt.github.io
-  oauth: {
-    client_id: '你的 client ID',
-    client_secret: '你的 client secret',
-  },
-})
-gitment.render('container')
-</script>
+gitment:
+  owner: 你的 GitHub ID,//如buppt
+  repo: 存储评论的仓库名,//如buppt.github.io
+  client_id: 你的 client ID,
+  client_secret: 你的 client secret,
+
 ```
 ### 3.初始化评论
 页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。
