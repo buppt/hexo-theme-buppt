@@ -12,8 +12,14 @@
    <link rel="SHORTCUT ICON" href="/img/photohead.jpg"/>
 </head>
 <body>
-    <%- partial('_partial/header') %>
-    <section class="main">
+  <%- partial('_partial/header') %>
+  <section class="main">
+    <header class="visible-sm-block visible-xs-block xs-header">
+        <div class="sm-header">
+            <img class="img-circle" src="/img/photohead.png">
+            <p><%= theme.name %></p>
+        </div>
+    </header>
     <div class="container">
         <div class="row">
             <main class="col-md-9">

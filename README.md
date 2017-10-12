@@ -12,6 +12,7 @@
 ![界面预览图](screenshot/screenshot2.png)
 ![界面预览图](screenshot/screenshot3.png)
 ![界面预览图](screenshot/screenshot4.png)
+![界面预览图](screenshot/screenshot5.png)
 
 ## 使用方式
 hexo的使用方法可以<a href="https://hexo.io/zh-cn/docs/">点击这里查看官方文档</a>，写的还是非常详细的。有不懂的地方可以给我留言询问。

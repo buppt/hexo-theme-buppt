@@ -44,6 +44,22 @@ a:active, a:focus, a:hover, a:visited, a img {
     margin-right: 20px; }
     .navbar .menu-link a {
       margin-left: 10px; }
+.xs-header{
+    margin: 0;
+    padding: 0;
+    background: url(/img/xsbackground.jpg);
+    background-size:100%;
+}
+.sm-header{
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 650px;
+}
+.sm-header img{
+    width: 150px;
+}
 
 .main {
   flex: 1; }
